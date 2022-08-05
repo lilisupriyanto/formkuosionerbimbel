@@ -1,0 +1,41 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Kuesioner Bimbel</title>
+          <link rel="stylesheet" type="text/css" href="styles.css" />
+      </head>
+      <body>
+        <h1 id="title">Bimbingan Belajar Cendekia</h1>
+        <p id="description">Terima kasih telah menyisihkan waktu untuk membantu kami mengembangkan Bimbel</p>
+        <form id="survey-form">
+          <label id="name-label">Nama: <input id="name" type="text" placeholder="Masukkan nama Anda" required /></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="Masukkan email Anda" required /></label>
+            <label id="number-label">Usia (opsional): <input id="number" type="number" name="age" placeholder="Usia" min="10" max="99" /></label>
+            <label>Manakah peran yang sesuai dengan Anda?
+              <select class="dropdown" id="dropdown">
+                <option value="">(pilih peran Anda)</option>
+                <option value="1">Siswa</option>
+                <option value="2">Orang Tua</option>
+                <option value="3">Pengajar</option>
+                <option value="4">Tidak memilih</option>
+                <option value="5">Lainnya</option>
+              </select>
+            </label>
+            <label>Apakah Anda akan merekomendasikan Bimbel Cendekia ke orang lain?</label>
+            <label><input type="radio" value="1" name="likert-scale" class="inline" /> Tentu</label>
+            <label><input type="radio" value="2" name="likert-scale" class="inline" /> Mungkin</label>
+            <label><input type="radio" value="3" name="likert-scale" class="inline" /> Tidak
+            </label>
+            <label>Indikator pengajar yang melayani siswa Anda? (Cek semua jika sesuai)</label>
+            <label><input value="1" type="checkbox" name="improve" class="inline" />  Memiliki Ketrampilan mengajar yang baik</label>
+            <label><input value="2" type="checkbox" name="improve" class="inline" /> Memiliki Wawasan yang luas</label>
+            <label><input value="3" type="checkbox" name="improve" class="inline" /> Menguasai Kurikulum</label>
+            <label><input value="4" type="checkbox" name="improve" class="inline" />  Menguasai media pembelajaran</label>
+            <label><input value="5" type="checkbox" name="improve" class="inline" />  Penguasaan teknologi</label>
+            <label>Silahkan beri kami kritik dan saran!
+              <textarea class="comment" name="comment" rows="3" cols="30" placeholder="Masukkan kritik dan saran disini..."></textarea>
+                  </label>
+        <input id="submit" type="submit" value="Kirim" />
+        </form>
+      </body>
+    </html>
